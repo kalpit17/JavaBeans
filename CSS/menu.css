@@ -1,0 +1,113 @@
+/* ----------------------- menu section -----------------------*/
+:root {
+  --header-color: #f3eeea;
+  --primary-color: #ebe3d5;
+  --secondary-color: #b0a695;
+  --footer-color: #040303;
+  --icon-color: #f39361;
+}
+
+.menu-card {
+  border-radius: 3rem;
+  margin: 10rem 5rem;
+  padding: 3rem;
+  background: var(--primary-color);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.menu-card .menu-title {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 3rem;
+  padding: 02rem 0;
+}
+
+.menu-items {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.menu-item {
+  /* flex: 45%; */
+  flex: 1 1 45%;
+  /* border: 2px solid black; */
+  display: flex;
+  /* padding: 1rem 0; */
+  margin: 1rem;
+}
+.menu-item img {
+  height: 12rem;
+  object-fit: contain;
+  margin-right: 2.5rem;
+}
+
+.menu-text-wrap {
+  display: flex;
+  justify-content: space-between;
+  gap: 3rem;
+  /* border: 1px solid green; */
+}
+
+.menu-text-left h2 {
+  font-size: 1.8rem;
+}
+.menu-text-right h2 {
+  font-size: 1.8rem;
+}
+.menu-text-left p {
+  font-size: 1.4rem;
+}
+
+/*----------------------- Responsive CSS ----------------------- */
+
+/*----------------------- 768px ----------------------- */
+
+@media screen and (max-width: 768px) {
+  .menu-item {
+    flex: 1 1 90%;
+  }
+  .menu-item img {
+    height: 10rem;
+  }
+}
+
+/*----------------------- 480px ----------------------- */
+
+@media screen and (max-width: 480px) {
+  .main-text {
+    padding: 0;
+  }
+  .main-text h1 {
+    font-size: 3.5rem !important;
+  }
+
+  .menu-card {
+    margin: 5rem 1.5rem;
+    padding: 1rem;
+  }
+  .menu-card .menu-title {
+    font-size: 2rem;
+  }
+  .menu-items {
+    flex-direction: column;
+  }
+
+  .menu-item img {
+    height: 6rem;
+  }
+  .menu-text-left h2 {
+    font-size: 1.1rem;
+  }
+
+  .menu-text-right h2 {
+    font-size: 1.1rem;
+  }
+
+  .menu-text-left p {
+    font-size: 0.8rem;
+  }
+  .menu-text-wrap {
+    /* flex-direction: column; */
+    gap: 1;
+  }
+}
